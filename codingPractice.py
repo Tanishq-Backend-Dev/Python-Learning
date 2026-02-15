@@ -4,7 +4,7 @@
 
 # Q.1.Hello World program
 
-# print("Hello World!")
+# print("Hello World!!")
 
 # Q.2.Take user input and print it
 
@@ -53,25 +53,25 @@
 
 # Q.7.Calculate factorial of a number
 
-# n = int(input("Enter a number - "))
+# num = int(input("Enter a number - "))
 # fac = 1
-# for i in range(1,n+1):
+# for i in range(1,num+1):
 #     fac = fac * i
 # print("The factorial of your number is",fac)
 
 # Q.8.Generate Fibonacci series
 
-# n = int(input("Enter a number - "))
+# num = int(input("Enter a number - "))
 # a = 0
 # b = 1
-# if n == 0:
+# if num == 0:
 #     print(a)
-# elif n == 1:
+# elif num == 1:
 #     print(b)
 # else:
 #     print(a)
 #     print(b)
-#     for i in range(2,n):
+#     for i in range(2,num):
 #         c = a + b
 #         print(c)
 #         a = b
@@ -81,14 +81,14 @@
 
 # num = int(input("Enter a number - "))
 # if num <= 1:
-#     print("Please enter a number which is greater than 1")
+#     print("Please enter a number greater than 1")
 # else:
 #     for i in range(2,num):
-#         if num % i == 0:
-#             print(num,"is not a prime number")
+#         if num%i==0:
+#             print(num,"is not a prime number.")
 #             break
 #     else:
-#         print(num,"is a prime number")
+#         print(num,"is a prime number.")
 
 # Q.10.Print all prime numbers in a range
 
@@ -96,11 +96,11 @@
 
 # Q.11.Reverse a number
 
-# num = int(input("Enter a number - "))
+# num = int(input("Enter a number :- "))
 # str_num = str(num)
 # reversed_str_num = str_num[::-1]
 # reversed_num = int(reversed_str_num)
-# print("The number in reverse order -",reversed_str_num)
+# print("Your number in reverse order is -", reversed_num)
 
 # Q.12.Check palindrome (number & string)
 
@@ -108,22 +108,22 @@
 
 # Q.13.Count digits in a number
 
-# num = int(input("Enter a number - "))
-# count = 0 
+# num = int(input("Enter a number :- "))
 # str_num = str(num)
+# count = 0
 # for i in str_num:
 #     count = count + 1
-# print("The number of digits in your number is",count)
+# print("The number of digits in your number is :-",count)
 
 # Q.14.Sum of digits of a number
 
-# num = int(input("Enter a number - "))
+# num = int(input("Enter a number :- "))
 # sum = 0
 # while num>0:
 #     digit = num % 10
 #     sum = sum + digit
 #     num = num // 10
-# print("The sum of digits of your number is",sum)
+# print("The sum of digits in your number is -",sum)
 
 # Q.15.Find ASCII value of a character
 
@@ -131,18 +131,18 @@
 
 # Q.16.Simple calculator using if-else
 
-# print("----------Calculator----------")
-# operation = input("Which operation you want to perform? - Addition, Subtraction, Multiplication or Division - ")
-# num1 = int(input("Enter a number - "))
-# num2 = int(input("Enter a number - "))
+# -------------------- Calculator -------------------- #
+# operation = input("Hi! What type of operation you want to perform? - Addition, Subtraction, Multiplication and Division - ")
+# a = int(input("Please enter a number - "))
+# b = int(input("Please enter a number - "))
 # if operation == "Addition":
-#     print("Result is",num1+num2)
+#     print("result is",a+b)
 # elif operation == "Subtraction":
-#     print("Result is",num1-num2)
+#     print("result is",a-b)
 # elif operation == "Multiplication":
-#     print("Result is", num1*num2)
+#     print("result is",a*b)
 # elif operation == "Division":
-#     print("Result is",num1/num2)
+#     print("result is",a/b)
 
 # Q.17.Area of circle / rectangle / triangle
 
@@ -158,36 +158,36 @@
 
 # Q.20.Print multiplication table
 
-# num = int(input("Enter a number - "))
+# num = int(input("Enter a number for which you want to print the multiplication table - "))
 # for i in range(1,11):
-#     print(num*i)
+#     print(num * i)
 
 # Q.21.Count vowels and consonants in a string
 
-# name = input("Enter you name - ")
-# vowel = 0
+# name = input("Enter your name - ")
+# vowels = 0
 # consonants = 0
 # for i in name:
 #     if i in 'aeiou':
-#         vowel = vowel + 1
+#         vowels = vowels + 1
 #     else:
 #         consonants = consonants + 1
-# print("The number of vowels in your name is -", vowel)
-# print("The number of consonants in your name is -", consonants)
+# print("The number of vowels in your name is",vowels)
+# print("The number of consonants in your name is",consonants)
 
 # Q.22.Reverse a string
 
 # name = input("Enter your name - ")
 # reversed_name = name[::-1]
-# print("Name in reverse order -",reversed_name)
+# print("Your name in reverse order is",name)
 
 # Q.23.Find string length without using len() [including spaces]
 
-# fullName = input("Enter your full name - ")
+# fullName = input("Please enter your full name - ")
 # count = 0
 # for i in fullName:
 #     count = count + 1
-# print("The length of the string is",count)
+# print("The length of your string is",count)
 
 # Q.24.Check anagram
 
@@ -199,14 +199,14 @@
 
 # Q.26.Count words in a sentence
 
-# fullName = input("Please enter your full name - ")
+# fullName = input("Enter your full name - ")
 # count = 0
 # for i in fullName:
 #     if i == " ":
 #         continue
 #     else:
 #         count = count + 1
-# print("The total number of words in your sentence is",count)
+# print("The number of words in your sentence is",count)
 
 # Q.27.Remove spaces from a string
 
@@ -242,23 +242,23 @@
 
 # Q.34.Sort list without using sort()
 
-# def sort(num):
-#     for i in range(len(num)-1,0,-1):
+# def sort(nums):
+#     for i in range(len(nums)-1,0,-1):
 #         for j in range(i):
-#             if num[j]>num[j+1]:
-#                 temp = num[j]
-#                 num[j] = num[j+1]
-#                 num[j+1] = temp
-# num = [10,9,8,7,6,5,4,3,2,1]
-# sort(num)
-# print(num)
+#             if nums[j]>nums[j+1]:
+#                 temp = nums[j]
+#                 nums[j] = nums[j+1]
+#                 nums[j+1] = temp
+# nums = [1,10,2,9,3,8,4,7,5,6]
+# sort(nums)
+# print(nums)
 
 # Q.35.Merge two lists
 
-# list1 = [1,2,3,4,5]
-# list2 = [6,7,8,9,10]
-# list3 = list1 + list2
-# print("The merged list is",list3)
+# num1 = [1,2,3,4,5,6]
+# num2 = [7,8,9,10,11,12]
+# allNums = num1 + num2
+# print(allNums)
 
 # Q.36.Rotate a list
 
@@ -267,7 +267,7 @@
 # Q.37.Find common elements in two lists
 
 # list1 = [1,2,3,4,5,6,7,8,9,10]
-# list2 = [1,3,5,7,9,11,13,15,17]
+# list2 = [1,3,5,7,9,11,13,15,17,19]
 # common_ele = []
 # for i in list1:
 #     if i in list2:
@@ -276,9 +276,9 @@
 
 # Q.38.Count occurrences of elements
 
-# marks = (12,14,15,11,14)
-# occurrence = marks.count(14)
-# print("The number of students who got 14 marks is",occurrence)
+# marks = (13,9,11,13,14)
+# occurence = marks.count(13)
+# print("The number of student who got 13 marks is",occurence)
 
 # Q.39.Flatten a nested list
 
@@ -335,9 +335,11 @@
 # Q.51.Write recursive factorial function
 
 # def factorial(n):
-#     if n==1:
+#     if n == 1:
 #         return 1
 #     return n * factorial(n-1)
+
+# print(factorial(5))
 
 # print(factorial(6))
 
@@ -348,7 +350,7 @@
 # Q.53.Lambda function examples
 
 # sum = lambda a,b : a+b
-# print(sum(1,8))
+# print(sum(3,4))
 
 # Q.54.Map, filter, reduce usage
 
@@ -360,8 +362,8 @@
 # sum = reduce(lambda a,b : a+b, nums)
 
 # print("filter -",even)
-# print("map -",doubles)
-# print("reduce -",sum)
+# print("map",doubles)
+# print("reduce",sum)
 
 # Q.55.Function to check Armstrong number
 
@@ -381,37 +383,44 @@
 
 # Q.59.Generator function example
 
-# def Squares(num):
+# def Topfivesquares(n):
 #     i = 1
-#     while i<=num:
-#         squares = i * i
-#         yield squares
-#         i = i + 1
-# gen = Squares(5)
-# print(gen.__next__())
-# print(gen.__next__())
-# print(gen.__next__())
-# print(gen.__next__())
-# print(gen.__next__())
+#     while i<=n:
+#         sq = i*i
+#         i += 1
+#         yield sq
+# value = Topfivesquares(5)
+# print(value.__next__())
+# print(value.__next__())
+# print(value.__next__())
+# print(value.__next__())
+# print(value.__next__())
+# print(value.__next__())
+# for i in value:
+#     print(i)
 
 # Q.60.Custom iterator
-
 # class Squares:
-#     def __init__(self,range):
+#     def __init__(self,limit):
 #         self.num = 1
-#         self.range = range
+#         self.limit = limit
 #     def __iter__(self):
 #         return self
 #     def __next__(self):
-#         if self.num <= self.range:
+#         if self.num <= self.limit:
 #             sq = self.num * self.num
-#             self.num += 1
+#             self.num += self.num
 #             return sq
 #         raise StopIteration
-# sq1 = Squares(6)
-# print(sq1.__next__())
-# print(sq1.__next__())
-# print(sq1.__next__())
+
+# s = Squares(5)
+# print(s.__iter__())
+# print(s.__next__())
+# print(s.__next__())
+# print(s.__next__())
+# print(s.__next__())
+# print(s.__next__())
+# print(s.__next__())
 
 # File Handling & Exceptions
 
