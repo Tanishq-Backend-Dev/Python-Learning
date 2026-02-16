@@ -456,17 +456,18 @@
 #Zero Division Error
 
 # try:
-#     num1 = int(input("Enter a number - "))
-#     num2 = int(input("Enter a number - "))
-#     print("Result of division is",num1/num2)
-# except ValueError as v:
-#     print("Invalid value -",v)
+#     a = int(input("Enter a number :- "))
+#     b = int(input("Enter a number :- "))
+#     result = a/b
+#     print(result)
 # except ZeroDivisionError as z:
-#     print("Value cant be divide by zero",z)
+#     print("Divisor can't be zero",z)
+# except ValueError as v:
+#     print("Invalid value",v)
 # except Exception as e:
-#     print("Something wrong happened",e)
+#     print("Something went wrong",e)
 # finally:
-#     print("Execution Completed")
+#     print("Program Completed")
 
 # Q.69.Logging errors to a file
 
@@ -483,19 +484,17 @@
 # Q.71.Create a class and object
 
 # class Employee:
-#     def __init__(self,name,age,salary):
-#         self.name = name
-#         self.age = age
-#         self.salary = salary
-#         self.company = "HSBC"
+#     def __init__(self):
+#         self.name = "Tanishq"
+#         self.age = 25
+#         self.salary = 68000
 #     def organization(self):
-#         return self.company
-
-# emp1 = Employee("Tanishq",25,68000)
-# print(emp1.name)
-# print(emp1.age)
-# print(emp1.salary)
-# print(emp1.organization())
+#         return "HSBC"
+# e1 = Employee()
+# print(e1.name)
+# print(e1.age)
+# print(e1.salary)
+# print(e1.organization())
 
 # Q.72.Constructor and destructor
 
@@ -505,15 +504,15 @@
 
 # class Animal:
 #     def name(self):
-#         print("My name is my bruno")
+#         print("My name is bruno.")
 
 # class Dog(Animal):
 #     def age(self):
-#         print("I am 5 years old")
+#         print("I am 5 years old.")
 
-# champ = Dog()
-# champ.name()
-# champ.age()
+# d1 = Dog()
+# d1.name()
+# d1.age()
 
 # Q.74.Multiple inheritance
 
@@ -523,13 +522,13 @@
 
 # class Vinod:
 #     def phone(self):
-#         print("I have Realme Phone")
+#         print("I have samsung phone")
 
 # class Tanishq(Vinod):
 #     def phone(self):
-#         print("I have Samsung phone")
+#         print("I have an iPhone")
 
-# t =Tanishq()
+# t = Tanishq()
 # t.phone()
 
 # Q.76.Encapsulation (private variables)
@@ -551,21 +550,18 @@
 #         self.m1 = m1
 #         self.m2 = m2
 #         self.m3 = m3
-    
 #     def __add__(self,other):
 #         m1 = self.m1 + other.m1
 #         m2 = self.m2 + other.m2
 #         m3 = self.m3 + other.m3
 #         return (m1,m2,m3)
-    
 #     def __sub__(self,other):
 #         m1 = self.m1 - other.m1
 #         m2 = self.m2 - other.m2
 #         m3 = self.m3 - other.m3
 #         return (m1,m2,m3)
-
-# s1 = Student(10,20,30)
-# s2 = Student(5,15,25)
+# s1 = Student(10,15,20)
+# s2 = Student(5,10,15)
 # s3 = s1-s2
 # print(s3)
 
@@ -579,32 +575,35 @@
 
 # def binarySearch(nums,val):
 
+# def binarySearch(nums,value):
 #     l = 0
 #     u = len(nums)-1
 #     while l<=u:
-#         mid = (l + u)//2
-#         if nums[mid] == val:
+#         mid = (l+u)//2
+#         if nums[mid]==value:
 #             return mid
 #         else:
-#             if nums[mid] < val:
+#             if nums[mid]<value:
 #                 l = mid + 1
 #             else:
 #                 u = mid - 1
 #     return -1
 
 # nums = [1,2,3,4,5,6,7,8,9,10]
-# print(binarySearch(nums,10))
+# value = 10
+# print(binarySearch(nums,value))
 
 # Q.82.Linear search
 
-# def linearSearch(nums,val):
-#     for i in range(0,len(nums)):
-#         if nums[i] == val:
+# def linearSearch(nums,value):
+#     for i in range(len(nums)):
+#         if nums[i] == value:
 #             return i
 #     return -1
 
-# nums = [1,2,3,4,5,6,7,8,9,10]
-# print(linearSearch(nums,3))
+# nums = [1,10,2,9,3,8,4,7,5,6]
+# value = 12
+# print(linearSearch(nums,value))
 
 # Q.83.Bubble sort
 
@@ -615,24 +614,23 @@
 #                 temp = nums[j]
 #                 nums[j] = nums[j+1]
 #                 nums[j+1] = temp
-
-# nums = [1,10,2,9,3,8,4,7,6,5]
+# nums = [1,10,2,9,3,8,4,7,5,6]
 # bubbleSort(nums)
 # print(nums)
 
 # Q.84.Selection sort
 
 # def selectionSort(nums):
-#     for i in range(0,len(nums)):
+#     for i in range(len(nums)):
 #         minpos = i
-#         for j in range(i+1,len(nums)):
+#         for j in range (i+1,len(nums)):
 #             if nums[j]<nums[minpos]:
 #                 minpos = j
 #         temp = nums[i]
 #         nums[i] = nums[minpos]
 #         nums[minpos] = temp
 
-# nums = [11,10,22,93,13,48,94,74,66,25]
+# nums = [1,20,2,19,3,18,4,17,5,16]
 # selectionSort(nums)
 # print(nums)
 
@@ -664,20 +662,19 @@
 
 # Q.91.Multithreading example
 
-# from threading import *
+# from threading import Thread
 # from time import *
 
 # class Hello(Thread):
 #     def run(self):
-#         for i in range(6):
+#         for i in range(5):
 #             print("Hello")
 #             sleep(2)
 # class Hi(Thread):
 #     def run(self):
-#         for i in range(6):
+#         for i in range(5):
 #             print("Hi")
-#             sleep(2)
-
+#             sleep(1)
 # t1 = Hello()
 # t2 = Hi()
 
